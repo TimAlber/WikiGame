@@ -11,4 +11,4 @@ AndroidSdkBuildToolsVersion=21.1.1
 AndroidSdkPath=
 AndroidNdkPath=
 JavaSdkPath=
-AndroidSequencePointsMode=None
+AndroidSequencePointsMode=Normal

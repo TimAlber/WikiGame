@@ -2,10 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Ad-Hoc|iPhone" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Droid\MainActivity.cs" Line="45" Column="4" />
-      <File FileName="Droid\HomeScreen.cs" Line="1" Column="1" />
-      <File FileName="Droid\FoundIt.cs" Line="26" Column="34" />
-      <File FileName="Droid\stats.cs" Line="16" Column="16" />
+      <File FileName="Droid\HomeScreen.cs" Line="43" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

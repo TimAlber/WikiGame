@@ -23,7 +23,6 @@ namespace Droid
 			base.OnCreate (bundle);
 			SetContentView (Resource.Layout.Main);
 			Button button = FindViewById<Button>(Resource.Id.button);
-			Button button1 = FindViewById<Button>(Resource.Id.button1);
 			Button button2 = FindViewById<Button>(Resource.Id.button2);
 
 			button.Click += (sender, e) => {

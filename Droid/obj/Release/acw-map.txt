@@ -6,6 +6,10 @@ Droid.HomeScreen, Droid;md5767c6430f12eaa2bb79d098a14927c03.HomeScreen
 Droid.HomeScreen, Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5767c6430f12eaa2bb79d098a14927c03.HomeScreen
 Droid.HomeScreen;md5767c6430f12eaa2bb79d098a14927c03.HomeScreen
 droid.HomeScreen;md5767c6430f12eaa2bb79d098a14927c03.HomeScreen
+Droid.HelloWebViewClient, Droid;md5767c6430f12eaa2bb79d098a14927c03.HelloWebViewClient
+Droid.HelloWebViewClient, Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5767c6430f12eaa2bb79d098a14927c03.HelloWebViewClient
+Droid.HelloWebViewClient;md5767c6430f12eaa2bb79d098a14927c03.HelloWebViewClient
+droid.HelloWebViewClient;md5767c6430f12eaa2bb79d098a14927c03.HelloWebViewClient
 Droid.FoundIt, Droid;md5767c6430f12eaa2bb79d098a14927c03.FoundIt
 Droid.FoundIt, Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5767c6430f12eaa2bb79d098a14927c03.FoundIt
 Droid.FoundIt;md5767c6430f12eaa2bb79d098a14927c03.FoundIt

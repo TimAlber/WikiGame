@@ -1,5 +1,4 @@
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\Droid.dll
-D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\Droid.pdb
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\wikigame.alberlein.de.apk
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\wikigame.alberlein.de-Signed.apk
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\PCLStorage.Abstractions.dll
@@ -7,12 +6,12 @@ D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\PCLStorage.d
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\PCLStorage.Abstractions.xml
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\bin\Release\PCLStorage.xml
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\Droid.dll
-D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\Droid.pdb
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\android\bin\wikigame.alberlein.de.apk
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\res\layout\main.xml
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\res\values\strings.xml
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\res\drawable\icon.png
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\res\layout\found.xml
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\res\layout\stats.xml
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\res\layout\home.xml
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\R.cs.flag
 D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Release\uploadflags.txt

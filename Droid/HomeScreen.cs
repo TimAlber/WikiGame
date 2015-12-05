@@ -14,23 +14,33 @@ using System.Text.RegularExpressions;
 
 using System.Threading.Tasks;
 using System.Net.Http;
+using Android.Webkit;
 
 namespace Droid
 {
 	[Activity (Label = "Get to /wiki/Philosophy")]			
-	public class HomeScreen : ListActivity
+	public class HomeScreen : Activity
 	{
 		List<string> dogs = new List<string> ();
 		List<string> dogs2 = new List<string> ();
-
+		WebView web_view;
+		int steps;
 		protected override async void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
+			SetContentView (Resource.Layout.home);
 
 //			string html = Intent.GetStringExtra ("raw html") ?? "Data not available";
 			string name = Intent.GetStringExtra ("name") ?? "Data not available";
 			string url = Intent.GetStringExtra ("url") ?? "Data not available";
-			int steps = Intent.GetIntExtra("steps", 1);
+			steps = Intent.GetIntExtra("steps", 1);
+
+
+			web_view = FindViewById<WebView> (Resource.Id.webView1);
+			web_view.Settings.JavaScriptEnabled = false;
+			web_view.LoadUrl (url);
+			web_view.SetWebViewClient (new HelloWebViewClient ());
+			web_view.Settings.Dispose ();
 
 			if (name == "/wiki/Philosophy") {
 				var activity2 = new Intent (this, typeof(FoundIt));
@@ -52,23 +62,27 @@ namespace Droid
 					dogs2.Add (url1 [0]);
 				}
 			}
-			ListAdapter = new ArrayAdapter<String> (this, Android.Resource.Layout.SimpleListItem1, dogs);
+			ListView Lview = FindViewById<ListView>(Resource.Id.listView1);
+			Lview.ItemClick += OnListItemClick;
+			Lview.Adapter = new ArrayAdapter (this, Android.Resource.Layout.SimpleListItem1, dogs);
+			//ListAdapter = new ArrayAdapter<String> (this, Android.Resource.Layout.SimpleListItem1, dogs);
+
+
 		}
 
-		protected override void OnListItemClick(ListView l, View v, int position, long id)
-		{
+		void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e) {
 //			var t = dogs.ElementAt(position);
 //			Android.Widget.Toast.MakeText(this, t, Android.Widget.ToastLength.Short).Show();
 		
 //			Task<string> sizeTask = DownloadHomepageAsync (position);
 //			string html = await sizeTask;
 
-			int steps = Intent.GetIntExtra("steps", -1);
+			steps = Intent.GetIntExtra("steps", -1);
 
 			var activity2 = new Intent (this, typeof(HomeScreen));
 			activity2.PutExtra ("steps", steps+1);
-			activity2.PutExtra ("name", dogs2[position]);
-			activity2.PutExtra ("url", "https://en.wikipedia.org/wiki/" + dogs.ElementAt(position));
+			activity2.PutExtra ("name", dogs2[e.Position]);
+			activity2.PutExtra ("url", "https://en.wikipedia.org/wiki/" + dogs.ElementAt(e.Position));
 			StartActivity (activity2);
 		
 		}
@@ -79,6 +93,15 @@ namespace Droid
 			Task<string> contentsTask = httpClient.GetStringAsync (url);
 			string contents = await contentsTask;
 			return contents;
+		}
+	}
+
+	public class HelloWebViewClient : WebViewClient
+	{
+		public override bool ShouldOverrideUrlLoading (WebView view, string url)
+		{
+			view.LoadUrl (url);
+			return true;
 		}
 	}
 

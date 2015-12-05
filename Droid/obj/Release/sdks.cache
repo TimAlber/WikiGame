@@ -16,5 +16,5 @@
   <ZipAlignPath>C:\Android\sdk\build-tools\23.0.1</ZipAlignPath>
   <MonoAndroidIncludePath />
   <SupportedApiLevel>22</SupportedApiLevel>
-  <AndroidSequencePointsMode>None</AndroidSequencePointsMode>
+  <AndroidSequencePointsMode>Normal</AndroidSequencePointsMode>
 </Sdk>

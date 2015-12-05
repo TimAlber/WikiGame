@@ -27,11 +27,12 @@ namespace Droid
 			// Create your application here
 			var documentsPath = System.Environment.GetFolderPath (System.Environment.SpecialFolder.MyDocuments);
 			var filePath = Path.Combine (documentsPath, "laseraugen.txt");
+
 			if (System.IO.File.Exists(filePath)){
 				string content = System.IO.File.ReadAllText (filePath);
 				text.Text = content;
 			} else {
-				text.Text = "Keine Stats gefunden.";
+				text.Text = "Keine Stats gefunden. Pfad:" + filePath;
 			}
 			butn.Click += (sender, e) => {
 				var activity2 = new Intent (this, typeof(MainActivity));
