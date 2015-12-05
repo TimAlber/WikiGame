@@ -1,0 +1,10 @@
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\Droid.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\Mono.Android.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\mscorlib.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\System.Core.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\System.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\System.Net.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\System.Net.Http.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\System.Xml.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\System.Runtime.Serialization.dll
+D:\Tim Alber\Documents\XamarinStudioProjects\done\Droid\obj\Debug\assemblies\System.ServiceModel.Internals.dll
